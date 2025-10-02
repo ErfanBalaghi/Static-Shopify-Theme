@@ -10,7 +10,7 @@
 
 @layer components {
   .reveal-effect {
-    @apply font-black uppercase tracking-wide relative;
+    @apply relative font-black uppercase tracking-wide;
   }
 
   .reveal-effect .outline-text {
@@ -18,7 +18,7 @@
   }
 
   .reveal-effect .fill-text {
-    @apply absolute top-0 left-0 flex-center text-white inset-0 pointer-events-none;
+    @apply absolute top-0 left-0 flex text-white inset-0 pointer-events-none;
     clip-path: circle(0 at 0 0);
     transition: clip-path 0.1s linear;
   }
@@ -27,6 +27,10 @@
     @apply pointer-events-none fixed top-0 left-0 w-32 h-32 rounded-full border-2 border-white opacity-0 transition-opacity duration-300;
     transform: translate3d(-9999px, -9999px, 0);
     mix-blend-mode: normal;
+  }
+
+  .bg-img {
+    background-size: 400px;
   }
 }
 

@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="../assets/all.css">
   <link rel="icon" href="#">
   <script src="../assets/atropos.min.js"></script>
+  <script src="../assets/main-script.js" defer></script>
   <title>Document</title>
 </head>
 
-<body class="font-roboto bg-primary text-white">
+<body class="font-roboto bg-primary text-white overflow-x-hidden">
   <header class="container flex-b-center h-20">
     <div class="flex items-center gap-10">
       <h2 class="text-2xl font-bold">
@@ -60,14 +61,14 @@
               <path id="arc1" d="M 21 50 A 30 30 0 0 1 81 50" fill="transparent" />
               <text font-size="12" fill="currentColor">
                 <textPath href="#arc1" startOffset="50%" text-anchor="middle">
-                  My Store
+                  Erfan Balaghi
                 </textPath>
               </text>
 
               <path id="arc2" d="M 21 50 A 30 30 0 0 1 81 50" fill="transparent" transform="rotate(180,50,50)" />
               <text font-size="12" fill="currentColor">
                 <textPath href="#arc2" startOffset="50%" text-anchor="middle">
-                  My Store
+                  Erfan Balaghi
                 </textPath>
               </text>
             </svg>
@@ -82,7 +83,7 @@
           <div class="atropos-scale">
             <div class="atropos-rotate overflow-hidden rounded-full">
               <div class="atropos-inner">
-                <div class="flex-center rounded-full bg-neutral-800 w-full h-full">
+                <div class="flex-center rounded-full text-center bg-neutral-800 w-full h-full text-3xl">
                   <svg class="!fill-white !stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525.5 525.5">
                     <path
                       d="M439.9 310.8c-.2.2-.1.5.1.7l13.2 8.7c.1.1.2.1.3.1.2 0 .3-.1.4-.2.2-.2.1-.5-.1-.7l-13.2-8.7c-.3-.2-.6-.1-.7.1z">
@@ -114,10 +115,241 @@
     </div>
   </section>
 
-  <div class="border-b border-neutral-600 my-14 mx-10"></div>
+  <!-- <div class="border-b border-neutral-600 my-14 mx-10"></div> -->
 
-  <section class="container mb-20">
-    <h1 class="text-3xl font-bold text-center">All Products Collections</h1>
+  <section class=" h-[450vh] mt-14 scroll-handle" id="cursor-circle-content">
+    <div class="sticky top-0 h-[150vh]">
+      <div class="relative flex h-screen child:flex-1 scroll-box" data-timing="0.1,0.9">
+        <div>
+          <img class="w-full h-full object-cover" src="../assets/women1.jpg" alt="">
+        </div>
+        <div class="relative h-full">
+          <div class="flex flex-col justify-between h-full p-5">
+            <div>
+              <h1 class="text-[3rem] reveal-effect">
+                <span class="outline-text !text-stroke">Your Title Special Product</span>
+                <span class="fill-text">Your Title Special Product</span>
+              </h1>
+
+              <div class="text-slate-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="text-2xl font-light text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sed
+                mollitia deserunt tenetur fugiat omnis voluptate iusto enim commodi quasi sunt ad, quam eveniet unde
+                dolorum
+                dolores quo, ut natus cupiditate quidem illo accusamus. Repellat veritatis quisquam, qui quod eveniet
+                necessitatibus.</p>
+            </div>
+
+            <div>
+              <p class="text-neutral-400 text-sm font-light capitalize">consectetur adipisicing elit</p>
+            </div>
+          </div>
+
+          <div class="absolute top-[270px] right-0 w-full">
+            <div class="relative reveal-effect">
+              <svg class="fill-text !left-[330px] !-top-1 w-[600px] h-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 579.5 182.62">
+                <polygon points="497 177.81 497 182.62 492.5 180.21 488 177.81 492.5 175.4 497 173 497 177.81"
+                  fill="#fff" />
+                <path
+                  d="m0,1.5h496.72c44.88,0,81.28,39.52,81.28,88.25,0,24.37-9.09,46.43-23.81,62.4-14.71,15.97-35.03,25.85-57.48,25.85"
+                  fill="transparent" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+              </svg>
+
+              <span class="fill-text !top-[173px] !left-auto !right-36">
+                Best quality
+              </span>
+
+              <svg class="fill-text !top-[250px] !left-20 w-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 773.93 900.39">
+                <path
+                  d="m0,387.04c43-64.49,85.8-128.67,129.15-193.68,85.87,236.1,171.4,471.26,256.92,706.41-.33.21-.66.41-.98.62C256.8,729.37,128.52,558.36,0,387.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m645.7,193.42c4.71,7.03,8.84,13.18,12.95,19.34,37.95,56.93,75.87,113.88,113.92,170.74,1.73,2.59,1.89,4.24,0,6.75-47.34,62.98-94.6,126.02-141.89,189.04-62.57,83.4-125.16,166.8-187.73,250.2-17.27,23.02-34.51,46.06-51.78,69.08-.49.65-1.09,1.21-2.45,1.43,85.51-235.14,171.03-470.27,256.98-706.6Z"
+                  fill="currentColor" />
+                <path
+                  d="m441.49,92.77C487.83,61.88,533.89,31.18,580.54.08v257.41c-46.55-31.02-92.82-61.86-139.09-92.7-26.91,38.16-80.95,37.87-107.95-.06-46.25,30.82-92.51,61.66-139.32,92.85V0c46.68,31.11,92.92,61.92,139.15,92.73,26.85-38.24,82-37.46,108.15.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,612.95c.02,17.72-14.6,32.37-32.36,32.43-17.7.06-32.47-14.62-32.51-32.32-.04-17.65,14.69-32.38,32.41-32.4,17.75-.01,32.45,14.61,32.46,32.29Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,484.09c-.08,17.73-14.85,32.25-32.63,32.09-17.84-.16-32.42-14.86-32.24-32.52.18-17.76,14.8-32.09,32.67-32.04,17.77.05,32.28,14.69,32.2,32.47Z"
+                  fill="currentColor" />
+                <path
+                  d="m387.62,386.94c-17.94.1-32.48-14.17-32.63-32.01-.14-17.48,14.34-32.23,31.77-32.36,18.3-.13,33.02,14.1,33.1,32,.07,17.84-14.29,32.26-32.24,32.37Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky top-0 h-[150vh]">
+      <div class="relative flex h-screen bg-primary child:flex-1 scroll-box" data-timing="0.1,0.9">
+        <div class="relative h-full">
+          <div class="flex flex-col justify-between h-full p-5">
+            <div>
+              <h1 class="text-[3rem] reveal-effect">
+                <span class="outline-text !text-stroke">Your Title Special Product</span>
+                <span class="fill-text">Your Title Special Product</span>
+              </h1>
+
+              <div class="text-slate-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="text-2xl font-light text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sed
+                mollitia deserunt tenetur fugiat omnis voluptate iusto enim commodi quasi sunt ad, quam eveniet unde
+                dolorum
+                dolores quo, ut natus cupiditate quidem illo accusamus. Repellat veritatis quisquam, qui quod eveniet
+                necessitatibus.</p>
+            </div>
+
+            <div>
+              <p class="text-neutral-400 text-sm font-light capitalize">consectetur adipisicing elit</p>
+            </div>
+          </div>
+
+          <div class="absolute top-[270px] right-0 w-full">
+            <div class="relative reveal-effect">
+              <svg class="fill-text !left-[330px] !-top-1 w-[600px] h-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 579.5 182.62">
+                <polygon points="497 177.81 497 182.62 492.5 180.21 488 177.81 492.5 175.4 497 173 497 177.81"
+                  fill="#fff" />
+                <path
+                  d="m0,1.5h496.72c44.88,0,81.28,39.52,81.28,88.25,0,24.37-9.09,46.43-23.81,62.4-14.71,15.97-35.03,25.85-57.48,25.85"
+                  fill="transparent" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+              </svg>
+
+              <span class="fill-text !top-[173px] !left-auto !right-36">
+                Best quality
+              </span>
+
+              <svg class="fill-text !top-[250px] !left-20 w-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 773.93 900.39">
+                <path
+                  d="m0,387.04c43-64.49,85.8-128.67,129.15-193.68,85.87,236.1,171.4,471.26,256.92,706.41-.33.21-.66.41-.98.62C256.8,729.37,128.52,558.36,0,387.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m645.7,193.42c4.71,7.03,8.84,13.18,12.95,19.34,37.95,56.93,75.87,113.88,113.92,170.74,1.73,2.59,1.89,4.24,0,6.75-47.34,62.98-94.6,126.02-141.89,189.04-62.57,83.4-125.16,166.8-187.73,250.2-17.27,23.02-34.51,46.06-51.78,69.08-.49.65-1.09,1.21-2.45,1.43,85.51-235.14,171.03-470.27,256.98-706.6Z"
+                  fill="currentColor" />
+                <path
+                  d="m441.49,92.77C487.83,61.88,533.89,31.18,580.54.08v257.41c-46.55-31.02-92.82-61.86-139.09-92.7-26.91,38.16-80.95,37.87-107.95-.06-46.25,30.82-92.51,61.66-139.32,92.85V0c46.68,31.11,92.92,61.92,139.15,92.73,26.85-38.24,82-37.46,108.15.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,612.95c.02,17.72-14.6,32.37-32.36,32.43-17.7.06-32.47-14.62-32.51-32.32-.04-17.65,14.69-32.38,32.41-32.4,17.75-.01,32.45,14.61,32.46,32.29Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,484.09c-.08,17.73-14.85,32.25-32.63,32.09-17.84-.16-32.42-14.86-32.24-32.52.18-17.76,14.8-32.09,32.67-32.04,17.77.05,32.28,14.69,32.2,32.47Z"
+                  fill="currentColor" />
+                <path
+                  d="m387.62,386.94c-17.94.1-32.48-14.17-32.63-32.01-.14-17.48,14.34-32.23,31.77-32.36,18.3-.13,33.02,14.1,33.1,32,.07,17.84-14.29,32.26-32.24,32.37Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-full h-full object-cover" src="../assets/women1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky top-0">
+      <div class="relative flex h-screen bg-primary child:flex-1 scroll-box">
+        <div>
+          <img class="w-full h-full object-cover" src="../assets/women1.jpg" alt="">
+        </div>
+
+        <div class="relative h-full">
+          <div class="flex flex-col justify-between h-full p-5">
+            <div>
+              <h1 class="text-[3rem] reveal-effect">
+                <span class="outline-text !text-stroke">Your Title Special Product</span>
+                <span class="fill-text">Your Title Special Product</span>
+              </h1>
+
+              <div class="text-slate-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="text-2xl font-light text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sed
+                mollitia deserunt tenetur fugiat omnis voluptate iusto enim commodi quasi sunt ad, quam eveniet unde
+                dolorum
+                dolores quo, ut natus cupiditate quidem illo accusamus. Repellat veritatis quisquam, qui quod eveniet
+                necessitatibus.</p>
+            </div>
+
+            <div>
+              <p class="text-neutral-400 text-sm font-light capitalize">consectetur adipisicing elit</p>
+            </div>
+          </div>
+
+          <div class="absolute top-[270px] right-0 w-full">
+            <div class="relative reveal-effect">
+              <svg class="fill-text !left-[330px] !-top-1 w-[600px] h-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 579.5 182.62">
+                <polygon points="497 177.81 497 182.62 492.5 180.21 488 177.81 492.5 175.4 497 173 497 177.81"
+                  fill="#fff" />
+                <path
+                  d="m0,1.5h496.72c44.88,0,81.28,39.52,81.28,88.25,0,24.37-9.09,46.43-23.81,62.4-14.71,15.97-35.03,25.85-57.48,25.85"
+                  fill="transparent" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+              </svg>
+
+              <span class="fill-text !top-[173px] !left-auto !right-36">
+                Best quality
+              </span>
+
+              <svg class="fill-text !top-[250px] !left-20 w-[200px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 773.93 900.39">
+                <path
+                  d="m0,387.04c43-64.49,85.8-128.67,129.15-193.68,85.87,236.1,171.4,471.26,256.92,706.41-.33.21-.66.41-.98.62C256.8,729.37,128.52,558.36,0,387.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m645.7,193.42c4.71,7.03,8.84,13.18,12.95,19.34,37.95,56.93,75.87,113.88,113.92,170.74,1.73,2.59,1.89,4.24,0,6.75-47.34,62.98-94.6,126.02-141.89,189.04-62.57,83.4-125.16,166.8-187.73,250.2-17.27,23.02-34.51,46.06-51.78,69.08-.49.65-1.09,1.21-2.45,1.43,85.51-235.14,171.03-470.27,256.98-706.6Z"
+                  fill="currentColor" />
+                <path
+                  d="m441.49,92.77C487.83,61.88,533.89,31.18,580.54.08v257.41c-46.55-31.02-92.82-61.86-139.09-92.7-26.91,38.16-80.95,37.87-107.95-.06-46.25,30.82-92.51,61.66-139.32,92.85V0c46.68,31.11,92.92,61.92,139.15,92.73,26.85-38.24,82-37.46,108.15.04Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,612.95c.02,17.72-14.6,32.37-32.36,32.43-17.7.06-32.47-14.62-32.51-32.32-.04-17.65,14.69-32.38,32.41-32.4,17.75-.01,32.45,14.61,32.46,32.29Z"
+                  fill="currentColor" />
+                <path
+                  d="m419.86,484.09c-.08,17.73-14.85,32.25-32.63,32.09-17.84-.16-32.42-14.86-32.24-32.52.18-17.76,14.8-32.09,32.67-32.04,17.77.05,32.28,14.69,32.2,32.47Z"
+                  fill="currentColor" />
+                <path
+                  d="m387.62,386.94c-17.94.1-32.48-14.17-32.63-32.01-.14-17.48,14.34-32.23,31.77-32.36,18.3-.13,33.02,14.1,33.1,32,.07,17.84-14.29,32.26-32.24,32.37Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-14">
+    <h2 class="text-3xl font-bold text-center">All Products Collections</h2>
 
     <div class="mt-12">
       <h3 class="text-xl font-medium tracking-wide text-neutral-100">Collections Name 1</h3>
@@ -498,6 +730,56 @@
     </div>
   </section>
 
+  <section class="container mt-14 mb-20">
+    <h1 class="text-3xl font-bold text-center">What our customers are saying...</h1>
+    <div class="flex-center gap-10 child:flex-1 mt-14">
+      <div class="flex-center flex-col gap-8 bg-gradient-radial py-10 px-8">
+        <div class="text-4xl text-slate-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-2xl font-medium">John Dou</p>
+
+        <p class="text-2xl font-light text-center text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Consectetur, saepe suscipit sint dignissimos neque modi.</p>
+      </div>
+
+      <div class="flex-center flex-col gap-8 bg-gradient-radial py-10 px-8">
+        <div class="text-4xl text-slate-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-2xl font-medium">John Dou</p>
+
+        <p class="text-2xl font-light text-center text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Consectetur, saepe suscipit sint dignissimos neque modi.</p>
+      </div>
+
+      <div class="flex-center flex-col gap-8 bg-gradient-radial py-10 px-8">
+        <div class="text-4xl text-slate-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-2xl font-medium">John Dou</p>
+
+        <p class="text-2xl font-light text-center text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Consectetur, saepe suscipit sint dignissimos neque modi.</p>
+      </div>
+    </div>
+  </section>
+
   <script>
     const myAtropos = Atropos({
       el: '.my-atropos',
@@ -505,32 +787,66 @@
       rotateXMax: 15,
     });
 
-    const myAtropos2 = Atropos({
-      el: '.my-atropos2',
-      shadow: false,
-      rotateXMax: 15,
-      highlight: false,
-      rotateTouch: false
-    });
-
-    const collections = document.querySelectorAll('#collections-name');
-    if (collections || collections.length > 0) {
-      collections.forEach((collection) => setHeight(collection))
+    const scrollElement = document.querySelector('.scroll-handle');
+    if (scrollElement) {
+      scrollHandler();
     }
 
-    function setHeight(collection) {
-      const { height } = collection.getBoundingClientRect();
-      const newHeight = height - 450;
-      collection.style.maxHeight = `${newHeight}px`;
+    function scrollHandler() {
+      const elementBox = scrollElement.querySelectorAll(".scroll-box");
 
-      const seeMoreBtn = collection.querySelector('#see-more-btn');
-      seeMoreBtn?.addEventListener('click', () => {
-        if (collection) {
-          collection.style.maxHeight = 'none';
-          seeMoreBtn.parentElement.style.display = 'none';
+      const totalHeight = scrollElement.offsetHeight;
+      const count = elementBox.length;
+
+      let ranges = [];
+      let currentStart = 0;
+
+      elementBox.forEach((box, i) => {
+        const timingFunction = box.dataset?.timing?.split(",")
+        const startFade = +timingFunction?.[0];
+        const endFade = +timingFunction?.[1];
+
+        const boxHeight = totalHeight / count;
+
+        ranges.push({
+          startFade: startFade,
+          endFade: endFade,
+          start: currentStart,
+          end: currentStart + boxHeight
+        });
+
+        currentStart += boxHeight;
+      });
+
+      window.addEventListener("scroll", () => {
+        const rect = scrollElement.getBoundingClientRect();
+        const scrollTop = 0 - rect.top;
+
+        const progress = Math.min(Math.max(scrollTop / totalHeight, 0), 1);
+
+        if (progress > 0 && progress < 1) {
+          ranges.forEach((range, i) => {
+            if (scrollTop >= range.start && scrollTop <= range.end) {
+              const localProgress = (scrollTop - range.start) / (range.end - range.start);
+
+              let opacity = 1;
+
+              if (localProgress >= range.startFade && localProgress <= range.endFade) {
+                opacity = 1 - (localProgress - range.startFade) / (range.endFade - range.startFade);
+              } else if (localProgress > range.endFade) {
+                opacity = 0;
+              } else {
+                opacity = 1;
+              }
+
+              elementBox[i].style.opacity = opacity;
+              elementBox[i].style.transform = `scale(${1 + 0.05 * (1 - opacity)})`;
+            }
+          });
         }
       });
     }
+
   </script>
 </body>
 

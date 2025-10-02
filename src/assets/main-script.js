@@ -16,8 +16,8 @@ function cursorRevealEffect() {
 
   if (!revealEffectElement || !revealEffectElement.length) return;
   Array.from(revealEffectElement).forEach((el) => {
-    const fillText = el.querySelector(".fill-text");
-    setRevealEffect(fillText);
+    const fillText = el.querySelectorAll(".fill-text");
+    Array.from(fillText).forEach((item) => setRevealEffect(item));
   });
 
   function setRevealEffect(fillText) {
@@ -64,3 +64,26 @@ function cursorRevealEffect() {
   }
 }
 cursorRevealEffect();
+
+/* =============================================== */
+
+const collections = document.querySelectorAll("#collections-name");
+if (collections || collections.length > 0) {
+  collections.forEach((collection) => setHeight(collection));
+}
+
+function setHeight(collection) {
+  const { height } = collection.getBoundingClientRect();
+  const newHeight = height - 450;
+  collection.style.maxHeight = `${newHeight}px`;
+
+  const seeMoreBtn = collection.querySelector("#see-more-btn");
+  seeMoreBtn?.addEventListener("click", () => {
+    if (collection) {
+      collection.style.maxHeight = "none";
+      seeMoreBtn.parentElement.style.display = "none";
+    }
+  });
+}
+
+/* =============================================== */
